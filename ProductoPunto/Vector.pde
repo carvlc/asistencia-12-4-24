@@ -14,8 +14,23 @@ class Vector{
     line(origen.x,origen.y,origen.x+destino.x,origen.y+destino.y);
   }
   
-  //public float obtenerProductoPunto(Vector vector){
-    
-  //}
+  public float obtenerProductoPunto(Vector vector){
+    return PVector.dot(this.getDestino(),vector.getDestino());
+  }
   
+  public void setOrigen(PVector origen){
+    this.origen = origen;
+  }
+  
+  public void setDestino(PVector destino){
+    this.destino = destino;
+  }
+  
+  public PVector getOrigen(){
+    return this.origen;
+  }
+  
+  public PVector getDestino(){
+    return this.destino;
+  }
 }
